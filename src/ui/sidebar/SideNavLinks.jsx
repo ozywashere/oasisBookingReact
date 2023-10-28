@@ -30,7 +30,7 @@ const navigation = [
 const normalStyle =
   'relative mb-[2px] flex items-center rounded py-[10px] px-4 text-lg font-medium text-body duration-200 hover:bg-white hover:bg-opacity-80';
 const activeStyle =
-  'relative mb-[2px] flex items-center rounded py-[10px] px-4 text-lg font-medium text-body duration-200 border-r-4 border-violet-500 [&>span]:text-violet-500 ';
+  'relative mb-[2px] flex items-center rounded py-[10px] px-4 text-lg font-medium text-body duration-200 border-r-4 border-violet-500 [&>span]:text-violet-500 bg-violet-100';
 const SideNavLinks = () => {
   return (
     <nav className='px-10'>
