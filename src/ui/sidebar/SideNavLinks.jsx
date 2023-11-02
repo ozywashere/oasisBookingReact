@@ -28,21 +28,21 @@ const navigation = [
   },
 ];
 const normalStyle =
-  'relative mb-[2px] flex items-center rounded py-[10px] px-4 text-lg font-medium text-body duration-200 hover:bg-violet-100 hover:text-violet-500 ';
+  'relative mb-1  flex items-center rounded py-3 px-4 text-base font-medium text-body duration-200  hover:bg-gray hover:text-primary';
 const activeStyle =
-  'relative mb-[2px] flex items-center rounded py-[10px] px-4 text-lg font-medium text-body duration-200 border-r-4 border-violet-500 [&>span]:text-violet-500 bg-violet-100';
+  'relative mb-1 flex items-center rounded py-3 px-4 text-base font-medium text-body duration-200 border-r-2 bg-gray text-primary ';
 const SideNavLinks = () => {
   return (
     <nav className='px-10'>
       <ul>
         {navigation.map((item) => (
-          <li key={item.name} className='mb-5'>
+          <li key={item.name}>
             <NavLink
               to={item.path}
               className={({ isActive }) => {
                 return isActive ? activeStyle : normalStyle;
               }}>
-              <span className='pr-[20px] text-3xl font-bold'>{item.icon}</span>
+              <span className='pr-[20px] text-xl font-bold'>{item.icon}</span>
               {item.name}
             </NavLink>
           </li>

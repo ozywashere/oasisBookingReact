@@ -3,6 +3,20 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+      },
+      container: {
+        center: true,
+        padding: '1rem',
+        screens: {
+          sm: '100%',
+          md: '100%',
+          lg: '1024px',
+          xl: '1280px',
+          '2xl': '1440px',
+        },
+      },
       colors: {
         body: '#637381',
         primary: '#1E86FF',
@@ -25,9 +39,10 @@ export default {
         'info-dark': '#007ACC',
         white: '#FFFFFF',
         black: '#000000',
-        gray: '#333333',
+        gray: '#f4f7ff',
         'gray-light': '#4F4F4F',
         'gray-dark': '#828282',
+        stroke: '#E0E0E0',
       },
     },
   },
